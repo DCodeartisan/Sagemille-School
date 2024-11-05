@@ -1,0 +1,11 @@
+{
+  "name": "sagemille",
+  "version": "1.0.0",
+  "description": "A website project for a middle school website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "D_codeartisan",
+  "license": "ISC"
+}
