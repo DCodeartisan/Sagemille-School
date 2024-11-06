@@ -1,22 +1,45 @@
 body {
+  user-select: none;
     background-color: #fff;
     font-family: "Roboto", serif;
 }
 
 /* container */
-#container-l  {
+.container {
+  padding: 50px 450px;
+  justify-items: center;
+  align-items: center;
+}
+
+.container-l  {
   padding: 50px 200px;
   justify-items: center;
   align-items: center;
   
 }
-#container-xl {
+.container-xl {
   padding: 50px 100px;
   justify-items: center;
   align-items: center;
 }
 
-/* buttond */
+/* buttons */
+.btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px;
+  background-color: #0c3954;
+  border: 1px solid #0c3954;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
 .button {
   text-decoration: none;
   color: #fff;
@@ -52,13 +75,13 @@ body {
 /* logo */
 #logo {
     padding-bottom: 100px;
+    position: fixed;
+    z-index: 2000;                      
+    left: 50%;          
+    transform: translateX(-50%);
 }
 #logo img {
     width: 350px;
-    position: absolute;     
-    top: 10px;                 
-    left: 50%;            
-    transform: translateX(-50%);
 }
 
 * {
@@ -72,7 +95,12 @@ body {
     color: #fff;
     padding: 10px 10px;
     justify-content: center;
-    position: relative;
+    position: fixed;
+    z-index: 1000;     
+    top: 88px;                 
+    left: 50%;     
+    width: 100vw;     
+    transform: translateX(-50%);
   }
   
   .navbar-container {
@@ -115,7 +143,7 @@ body {
     z-index: 2;
   }
 
-  /* hero */
+  /* header */
 .hero {
     width: 100%;                     
     height: 700px;                   
@@ -125,8 +153,7 @@ body {
     background-repeat: no-repeat;    
     color: white;                    
     display: flex;                           
-    align-items: center;                         
-    padding: 100px;                   
+    align-items: center;                                         
   }
 
   .welcome {
@@ -158,28 +185,77 @@ body {
   .information {
     display: flex;
     background-color: #0c3954;
+    width: 100%;
   }
 
   .information img {
     width: 50%;
   }
 
-  .information h2 {
+  .info h2 {
     font-size: 2em;
     color: #fff;
-    width: 50%;
+    width:100%;
   }
 
-  .information p {
+  .info p {
     color: #fff;
-    width: 50%;
+    width: 100%;
+    text-align: justify;
   }
 
   .info {
-    padding: 50px 50px;
-    justify-content: center;                          
-    align-items: center;
+    padding: 80px 100px;
   }
+
+  /* News */
+  .news {
+    text-align: center;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f0f;
+    
+  }
+  .news h2 {
+    padding-top: 150px;
+  }
+
+  /* Culture */
+  .culture {
+    padding: 50px 0px;
+    background-color: #106552;
+    margin-top: -220px;
+    text-align: center;
+    color: #fff;
+
+  }
+
+  .culture-btn {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+
+  .culture p {
+    font-size: 2rem;
+  }
+
+  /* gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+
+
   /* small screens */
 @media (max-width: 900px) {
   .navbar-links {
@@ -212,6 +288,14 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 100; 
+  }
+
+
+
+
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
   
