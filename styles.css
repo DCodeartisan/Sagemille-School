@@ -6,18 +6,24 @@ body {
 
 /* container */
 .container {
+  padding: 50px 450px;
+  justify-items: center;
+  align-items: center;
+}
+
+.container-l {
   padding: 50px 300px;
   justify-items: center;
   align-items: center;
 }
 
-.container-l  {
+.container-xl  {
   padding: 50px 200px;
   justify-items: center;
   align-items: center;
   
 }
-.container-xl {
+.container-xxl {
   padding: 50px 100px;
   justify-items: center;
   align-items: center;
@@ -73,14 +79,17 @@ body {
 }
 
 /* logo */
-#logo {
-    margin-top: 0;
+.nav-logo {
     position: fixed;
+    width: 100vw;
+    background-color: #fff;
     z-index: 2000;                      
-    left: 50%;          
+    left: 50%;  
+    justify-items: center;
+    align-items: center;        
     transform: translateX(-50%);
 }
-#logo img {
+.nav-logo img {
     width: 350px;
 }
 
@@ -90,6 +99,10 @@ body {
     box-sizing: border-box;
   }
   
+  .nav-bar {
+    padding-top: 50px;
+  }
+
   .navbar {
     background-color: #0c3954;
     color: #fff;
@@ -147,7 +160,7 @@ body {
 .header {
     width: 100%;                     
     height: 700px;  
-    margin-top: 150px;                 
+    margin-top: 90px;                 
     background-image: url('images/background.jpg');
     background-size: cover;         
     background-position: center;     
@@ -210,32 +223,29 @@ body {
   .news {
     text-align: center;
     width: 100%;
-    padding: 100px 0;
-    background-color: #f0f;
-    
+    padding: 10px 0;
   }
+
   .news h2 {
-    padding-top: 150px;
+    padding: 40px 0;
+  }
+
+  .news-btn {
+    padding: 60px 0;
   }
 
   /* Culture */
   .culture {
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 400px;
     background-color: #106552;
-    margin-top: -220px;
     text-align: center;
     color: #fff;
   }
 
-  .culture-btn {
-    padding-top: 150px;
-    padding-bottom: 50px;
-  }
-
   .culture p {
     font-size: 2rem;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 
   /* gallery */
@@ -295,6 +305,11 @@ body {
   .footer-col p, .footer-col ul {
     font-size: 14px;
     line-height: 1.8;
+  }
+
+  .footer-col p a {
+    color: white;
+    transition: color 0.3s;
   }
   
   .footer-col ul {
