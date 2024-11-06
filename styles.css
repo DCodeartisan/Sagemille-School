@@ -369,9 +369,90 @@ body {
 
 
  /* NEWS & EVENTS PAGE  STYLES STARTS HERE*/
+  .latest-news {
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+  .posts {
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #0c3954;
+    margin-bottom: 100px;
+  }
 
+  .post {
+    width: 50%;
+    padding: 200px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  /* NEWS & EVENTS PAGE  STYLES ENDS HERE*/
 
  
+
+
+
+  /* SIGN UP PAGE  STYLES STARTS HERE*/
+  .container {
+    padding-top: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #0c3954;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .sign-up-message {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .sign-up-message a {
+    color: #106552;
+    text-decoration: none;
+  }
+  
+  .sign-up-message a:hover {
+    text-decoration: underline;
+  }
+
   /* footer */
   .footer {
     display: grid;

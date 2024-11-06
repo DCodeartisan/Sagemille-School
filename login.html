@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/sagemille_icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sagemille | About</title>
+</head>
+<body>
+    <!-- logo -->
+    <section class="nav-logo">
+        <div>
+            <a href="index.html" class="img">
+                <img src="images/sagemille_logo.jpg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- navbar -->
+    <section class="nav-bar">
+        <nav class="navbar">
+            <div class="navbar-container">
+              <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="news&events.html">News & Events</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="parents.html">Parents</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Log In / Sign Up</a></li>
+              </ul>
+              <div class="navbar-toggle" id="navbar-toggle">
+                &#9776;  <!-- Hamburger Icon -->
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <section>
+        <div class="container">
+            <form id="login-form" action="login-process.php" method="POST">
+              <h1>Login</h1> <br>
+              
+              <!-- Username -->
+              <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+              </div>
+              
+              <!-- Password -->
+              <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+              </div>
+        
+              <!-- Login Button -->
+              <button type="submit" class="buttons" onclick="return validateLoginForm()">Login</button>
+        
+              <!-- Signup Link -->
+              <div class="sign-up-message">
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+              </div>
+            </form>
+          </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-col logo">
+            <a href="login.html" class="img">
+            <img src="images/sagemille_white_logo.png" alt="">
+        </a>
+        </div>
+        <div class="footer-col">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        </div>
+        <div class="footer-col">
+          <h3>QUICK NAVIGATION</h3>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="news&events.html">News & Events</a></li>
+          </ul>
+          <ul class="footer-nav">
+            <li><a href="students.html">Students</a></li>
+            <li><a href="parents.html">Parents</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>GET IN TOUCH</h3> <br>
+          <p>500 Terry Francine Street
+            San Francisco, CA 94158.</p> <br>
+          <p>Email: <a href="mailto: mailfj115@gmail.com">mailfj115@gmail.com</a></p> <br>
+          <p>Phone: <a href="tel: +2348167902004">+234-816-790-2004</a></p>
+        </div>
+      </footer>
+      
+    <script src="script.js"></script>
+</body>
+</html>

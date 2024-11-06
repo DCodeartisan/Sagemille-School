@@ -42,25 +42,51 @@
           </nav>
     </section>
 
-    <!-- Latest news -->
-    <section class="container-l">
-        <div class="latest-news">
-            <h1>LATEST NEWS</h1>
-        </div>
+    <section>
+        <div class="container">
+            <form id="signup-form" action="#" method="POST">
+              <h1>Sign Up</h1>
+        
+              <!-- Full Name -->
+              <div class="input-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+              </div>
+        
+              <!-- Email Address -->
+              <div class="input-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+        
+              <!-- Password -->
+              <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+              </div>
+        
+              <!-- Confirm Password -->
+              <div class="input-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+              </div>
+        
+              <!-- Submit Button -->
+              <button type="submit" class="buttons" onclick="return validateForm()">Sign Up</button> 
+        
+              <!-- Message Section -->
+              <div class="sign-up-message">
+                <br><p>Already have an account? <a href="login.html">Login here</a></p>
+              </div>
+            </form>
+          </div>
     </section>
 
-    <!-- News posts -->
-    <section class="container-xxl posts">
-        <div class="container-l post">
-            <h2>Check back soon</h2> <br><br>
-            <p>Once posts are published, you’ll see them here.</p>
-        </div>
-    </section>
 
     <!-- footer -->
     <footer class="footer">
         <div class="footer-col logo">
-            <a href="news&events.html" class="img">
+            <a href="signup.html" class="img">
             <img src="images/sagemille_white_logo.png" alt="">
         </a>
         </div>
