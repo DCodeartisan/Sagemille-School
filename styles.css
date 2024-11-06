@@ -156,6 +156,8 @@ body {
     z-index: 2;
   }
 
+
+  /* HOME PAGE  STYLES STARTS HERE*/
   /* header */
 .header {
     width: 100%;                     
@@ -216,6 +218,7 @@ body {
   }
 
   .info {
+    width: 50%;
     padding: 80px 100px;
   }
 
@@ -270,7 +273,105 @@ body {
   .sign-up p {
     font-size: 1.5rem;
   }
+  /* HOME PAGE  STYLES ENDS HERE*/
 
+
+  /* ABOUT PAGE  STYLES STARTS HERE*/
+  /* our school */
+  .our-school  {
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .our-school p {
+    text-align: justify;
+  }
+
+  /* message */
+  .message {
+    display: flex;
+    background-color: #0c3954;
+    width: 100%;
+    height: 800px;
+  }
+
+  .message img {
+    width: 50%;
+  }
+
+  .messages h2 {
+    font-size: 2em;
+    color: #fff;
+    width:100%;
+  }
+
+  .messages p {
+    color: #fff;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .messages ul {
+    color: #fff;
+    font-size: 1.3em;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .messages {
+    width: 50%;
+    padding: 80px 100px;
+  }
+
+  .staff-directory  {
+    text-align: center;
+  }
+
+   /* staff list */
+   .staff-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 10px;
+    margin-top: -50px;
+    padding-bottom: 150px;
+  }
+  
+  .list {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+
+  .list a {
+    color: #000;
+  }
+  /* ABOUT PAGE  STYLES ENDS HERE*/
+
+
+  /* ACADEMICS PAGE  STYLES STARTS HERE*/
+  .academics  {
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .academics p {
+    text-align: justify;
+  }
+
+  /* subjects */
+  .subject {
+    background-color: #106552;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+ /* ACADEMICS PAGE  STYLES ENDS HERE*/
+
+
+ /* NEWS & EVENTS PAGE  STYLES STARTS HERE*/
+
+
+ 
   /* footer */
   .footer {
     display: grid;
