@@ -3,44 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="images/sagemille_icon.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <title>Sagemille | Home</title>
 </head>
 <body>
-    <!-- logo -->
-    <section class="nav-logo">
-        <div>
-            <a href="index.html" class="img">
-                <img src="images/sagemille_logo.jpg" alt="">
-            </a>
-        </div>
-    </section>
+    <!-- Logo Section -->
+<section class="fixed top-0 left-0 right-0 z-50 bg-white">
+    <!-- Logo -->
+    <div class="flex justify-center my-4 md:my-2">
+        <a href="index.html">
+            <img src="images/sagemille_logo.jpg" alt="Sagemille Logo" class="w-[250px] md:w-[300px]">
+        </a>
+    </div>
 
-    <!-- navbar -->
-    <section class="nav-bar">
-        <nav class="navbar">
-            <div class="navbar-container">
-              <ul class="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="news&events.html">News & Events</a></li>
-                <li><a href="students.html">Students</a></li>
-                <li><a href="parents.html">Parents</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="signup.html">Log In / Sign Up</a></li>
-              </ul>
-              <div class="navbar-toggle" id="navbar-toggle">
-                &#9776;  <!-- Hamburger Icon -->
-              </div>
+    <!-- Login and Social Icons -->
+    <div class="hidden absolute top-2 right-16 flex items-center text-xl space-x-4 my-6 md:block">
+        <!-- Login -->
+        <a href="login.html" class="text-[#0c3954] font-bold hover:text-[#106552]">Log In</a>
+
+        <!-- Social Icons -->
+        <a href="#" class="text-[#0c3954] font-bold hover:text-[#106552]">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-[#0c3954] font-bold hover:text-[#106552]">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-[#0c3954] font-bold hover:text-[#106552]">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Navbar -->
+<section class="fixed top-[88px] left-0 right-0 z-40">
+    <nav class="bg-[#0c3954]">
+        <div class="flex justify-center py-3 px-4">
+            <!-- Navigation Links -->
+            <div class="hidden md:block">
+                <ul class="navbar-links flex space-x-10 text-white">
+                    <li><a href="index.html" class="hover:text-[#106552] ">Home</a></li>
+                    <li><a href="about.html" class="hover:text-[#106552]">About</a></li>
+                    <li><a href="academics.html" class="hover:text-[#106552]">Academics</a></li>
+                    <li><a href="news&events.html" class="hover:text-[#106552]">News & Events</a></li>
+                    <li><a href="students.html" class="hover:text-[#106552]">Students</a></li>
+                    <li><a href="parents.html" class="hover:text-[#106552]">Parents</a></li>
+                    <li><a href="admissions.html" class="hover:text-[#106552]">Admissions</a></li>
+                    <li><a href="contact.html" class="hover:text-[#106552]">Contact</a></li>
+                </ul>
             </div>
-          </nav>
-    </section>
+
+            <!-- Hamburger Icon -->
+            <div class="navbar-toggle text-white text-2xl cursor-pointer md:hidden" id="navbar-toggle">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
+        </div>
+    </nav>
+</section>
+
+
 
     <!-- header -->
     <header id="header" class="container-xl header">
