@@ -742,6 +742,10 @@ video {
   max-width: 100%;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -788,10 +792,6 @@ video {
 
 .self-end {
   align-self: flex-end;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-b {
