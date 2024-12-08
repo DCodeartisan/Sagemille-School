@@ -9,19 +9,4 @@ function navToggle() {
   menu.classList.toggle('hidden')
 }
 
-async function checkAccess() {
-    try {
-      const response = await fetch('https://ipinfo.io?token=YOUR_API_TOKEN'); // Replace with your token
-      const data = await response.json();
-  
-      if (data.country !== 'US') {
-        document.getElementById('content').style.display = 'none';
-        document.getElementById('blocked').style.display = 'block';
-      }
-    } catch (error) {
-      console.error('Error fetching geolocation:', error);
-    }
-  }
-  
-  checkAccess();
   
