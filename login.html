@@ -3,109 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="images/sagemille_icon.png">
-    <link rel="stylesheet" href="styles.css">
-    <title>Sagemille | Login</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>Sagemille | Home</title>
 </head>
 <body>
-    <!-- logo -->
-    <section class="nav-logo">
-        <div>
-            <a href="index.html" class="img">
-                <img src="images/sagemille_logo.jpg" alt="">
-            </a>
-        </div>
-    </section>
-
-    <!-- navbar -->
-    <section class="nav-bar">
-        <nav class="navbar">
-            <div class="navbar-container">
-              <ul class="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="news&events.html">News & Events</a></li>
-                <li><a href="students.html">Students</a></li>
-                <li><a href="parents.html">Parents</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Log In / Sign Up</a></li>
-              </ul>
-              <div class="navbar-toggle" id="navbar-toggle">
-                &#9776;  <!-- Hamburger Icon -->
-              </div>
+        <!-- Logo Section -->
+        <section class="fixed top-0 left-0 right-0 z-50 bg-white">
+            <div class="flex justify-center my-4 md:my-2">
+                <a href="index.html">
+                    <img src="images/sagemille_logo.jpg" alt="Sagemille Logo" class="w-[250px] md:w-[300px]">
+                </a>
             </div>
-          </nav>
-    </section>
+            <div class="hidden absolute top-2 right-16 flex items-center text-xl space-x-4 my-6 md:block">
+                <a href="#" class="text-color1 font-bold hover:text-color2">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-color1 font-bold hover:text-color2">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-color1 font-bold hover:text-color2">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
 
-    <section>
-        <div class="container">
-            <form id="login-form" action="login-process.php" method="POST">
-              <h1>Login</h1> <br>
-              
-              <!-- Username -->
-              <div class="input-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
-              </div>
-              
-              <!-- Password -->
-              <div class="input-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-              </div>
-        
-              <!-- Login Button -->
-              <button type="submit" class="buttons" onclick="return validateLoginForm()">Login</button>
-        
-              <!-- Signup Link -->
-              <div class="sign-up-message">
-                <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
-              </div>
-            </form>
-          </div>
-    </section>
+        <!-- Navbar -->
+        <section class="fixed top-[88px] left-0 right-0 z-40">
+            <nav class="bg-color1 pt-6 pb-3 md:py-3">
+                <div class="flex justify-center px-4">
+                    <div class="hidden md:block">
+                        <div class="navbar-links flex space-x-10 text-white">
+                            <a href="index.html" class="hover:text-color2 ">Home</a>
+                            <a href="about.html" class="hover:text-color2">About</a>
+                            <a href="academics.html" class="hover:text-color2">Academics</a>
+                            <a href="news&events.html" class="hover:text-color2">News & Events</a>
+                            <a href="contact.html" class="hover:text-color2">Contact</a>
+                            <a href="login.html" class="hover:text-color2">Log In</a>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button
+                          id="menu-btn"
+                          type="button"
+                          class="z-40 block hamburger md:hidden focus:outline-none"
+                        >
+                          <span class="hamburger-top"></span>
+                          <span class="hamburger-middle"></span>
+                          <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                    <div
+                    id="menu"
+                    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end min-h-screen w-full py-2 pt-10 px-12 space-y-3 text-lg text-white text-center uppercase font-bold bg-color1 md:px-24"
+                >
+                    <a href="index.html" class="pt-6 hover:text-color2 ">Home</a>
+                    <a href="about.html" class="hover:text-color2">About</a>
+                    <a href="academics.html" class="hover:text-color2">Academics</a>
+                    <a href="news&events.html" class="hover:text-color2">News & Events</a>
+                    <a href="contact.html" class="hover:text-color2">Contact</a>
+                    <a href="login.html" class="hover:text-color2">Log In</a>
+                    <div class="flex flex-row justify-center text-3xl">
+                        <a href="#" class="hover:text-color2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="px-6 hover:text-color2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="hover:text-color2">
+                            <i class="fab fa-instagram pb-6"></i>
+                        </a>
+                    </div>
+                </div>
+                </nav>
+        </section>
 
+        <section>
+          <div class="flex justify-center mt-24 pt-12 pb-24">
+              <form id="login-form" action="#" method="POST">
+                <h1 class="text-2xl md:text-3xl text-center font-bold uppercase py-6">Log in</h1>
+                
+                <!-- Username -->
+                <div class="input-group">
+                  <label for="username">Username:</label>
+                  <input class="form-input" type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                
+                <!-- Password -->
+                <div>
+                  <label for="password">Password:</label>
+                  <input class="form-input" type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+          
+                <!-- Login Button -->
+                <button type="submit" class="button w-full font-bold mt-6" onclick="return validateLoginForm()">Login</button>
+          
+                <!-- Signup Link -->
+                <div class="sign-up-message mt-6">
+                  <p>Don't have an account? <a href="signup.html" class="font-bold underline">Sign Up here</a></p>
+                </div>
+              </form>
+            </div>
+      </section>
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="footer-col logo">
-            <a href="login.html" class="img">
-            <img src="images/sagemille_white_logo.png" alt="">
+<!-- footer -->
+<footer class="max-w-full bg-color1">
+    <div class="container mx-auto flex flex-col justify-center text-white py-12 md:space-x-4 md:flex-row">
+            <a href="login.html" class="w-full md:w-1/4">
+            <img src="images/sagemille_white_logo.png" class="w-[250px] md:w-[300px]" alt="">
         </a>
+        <div class="w-full px-6 md:px-0 md:w-1/4">
+          <h3 class="text-xl uppercase font-bold pt-6 pb-3 md:pt-0">
+            quick navigation
+        </h3>
+         <div class="flex flex-col space-y-3 underline md:flex-row md:gap-12 md:space-y-0">
+            <div class="flex flex-col space-y-3 md:space-y-0">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                </div>
+              <div class="flex flex-col space-y-3 md:space-y-0">
+                <a href="news&events.html">News & Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Log In</a>
+              </div>
+         </div>
         </div>
-        <div class="footer-col">
-          <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-        </div>
-        <div class="footer-col">
-          <h3>QUICK NAVIGATION</h3>
-          <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="news&events.html">News & Events</a></li>
-          </ul>
-          <ul class="footer-nav">
-            <li><a href="students.html">Students</a></li>
-            <li><a href="parents.html">Parents</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>GET IN TOUCH</h3> <br>
+        <div class="flex flex-col w-full px-6 md:px-0  md:w-1/4">
+          <h3 class="text-xl uppercase font-bold pt-12 pb-3 md:pt-0">
+            get in touch
+        </h3>
           <p>500 Terry Francine Street
-            San Francisco, CA 94158.</p> <br>
-          <p>Email: <a href="mailto: mailfj115@gmail.com">mailfj115@gmail.com</a></p> <br>
-          <p>Phone: <a href="tel: +2348167902004">+234-816-790-2004</a></p>
+            San Francisco, CA 94158.</p>
+          <p>Email: <a class="underline" href="mailto: mailfj115@gmail.com">mailfj115@gmail.com</a>
+          <p>Phone: <a class="underline" href="tel: +2348167902004">+234-816-790-2004</a></p>
         </div>
-      </footer>
-      
-    <script src="script.js"></script>
+        <div class="flex flex-col w-full px-6 md:px-0  md:w-1/4">
+            <h3 class="text-xl uppercase font-bold pt-12 pb-6 md:pt-0">
+              stay connected
+          </h3>
+            <div class="text-2xl font-bold">
+                <a href="#" class="hover:text-color2">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="hover:text-color2 px-6">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="hover:text-color2">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+          </div>
+    </div>
+  </footer>
+    <script src="JS/script.js"></script>
 </body>
 </html>
