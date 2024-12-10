@@ -849,11 +849,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -996,6 +991,7 @@ video {
 .form-input {
   margin-bottom: 1.5rem;
   width: 100%;
+  border-radius: 0px;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
