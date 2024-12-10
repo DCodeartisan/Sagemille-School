@@ -1333,6 +1333,10 @@ li {
     padding: 6rem;
   }
 
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
